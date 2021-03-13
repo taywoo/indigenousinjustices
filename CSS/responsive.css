@@ -1,0 +1,124 @@
+
+
+@media (min-width: 1025px) {
+  .mobile-display {
+    display: none;
+  }
+}
+
+/* || LAPTOP S */
+@media (max-width: 1366px) {
+
+  .mobile-display {
+    display: none;
+  }
+
+  /* | ISSUES PAGE */
+  
+  .wrapper {
+    width: 80%;
+  
+    display: flex;
+  }
+  
+  .leading-p {
+    width: 80%;
+  }
+  
+  .large-quote {
+    width: 80%;
+  }
+  
+  .wrapper5 {
+    width: 75%;
+  }
+  
+  .multi {
+    column-gap: 25px;
+  }
+  
+    .right-text {
+      width: 45%;
+      margin: 7% 0 50px 0;
+    
+      position: absolute;
+      left: 50%;
+    
+      display: block;
+    }
+  
+  .intro-card {
+    margin: 0 2%;
+  } 
+    
+  .card {
+    height: auto;
+    width: 45%;
+  }
+  
+  .intro-card {
+    width: 25%;
+  }
+  
+  .left-align {
+    width: 100%;
+  }
+  
+  .stats {
+    height: 70vh;
+  }
+  
+  
+  
+  }
+
+
+
+/* | PHONE */
+@media (max-width: 700px) {
+
+.mobile-display {
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+  background-color: #111111;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mobile-display img {
+  width: 90%;
+}
+
+#quote {
+  width: 85%;
+}
+
+.mobile-display h2 {
+  position: fixed;
+  top: 20px;
+  color: #fff;
+  font-size: 9vw;
+}
+
+.mobile-display p {
+  position: fixed;
+  bottom: 10%;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
+  text-indent: 0;
+  text-align: center;
+  width: 80%;
+}
+
+}
+
+
+
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="harrnish" />
+    <title>Home | Indigenous Injustices</title>
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="https://use.typekit.net/euv2wac.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="mobile-display">
+      <img src="assets/Joyce-hero.png" alt="" id="rotator">
+      <h2>Indigenous Injustices</h2>
+      <p>Your browser is too small :( Please view on desktop for optimal experience</p>
+    </div>
+
+    <div class="intro-wrapper">
+      <div id="quote" class="slide-up show-on-scroll">
+          <p></p>
+      </div>
+    </div>
+
+
+    <div class="side-navbar">
+      <span onclick="openNav()"><i class="material-icons md-24" id="menu">waves</i></span>
+  
+      <a href="home.html"><p class="side-title">INDIGENOUS INJUSTICES</p></a>
+  </div>
+  
+  <div id="mySidenav" class="nav-push">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+      <li class="navigation-item">
+          <a class="navigation-link navigation-link-4" href="index.html">
+            <span data-text="Home">Home</span></a>
+      <li class="navigation-item">
+          <a class="navigation-link navigation-link-4" href="#">
+              <span data-text="Issues">Issues</span></a></li>
+      <a href="joyce.html" class="sub-links">Joyce Echaquan</a>
+      <a href="mikmaq.html" class="sub-links">Mi'kmaq Lobster Dispute</a>
+      <a href="1492.html" class="sub-links">1492 Land back Lane</a>
+      <a href="#" class="sub-links"><del>Transmountain Pipeline</del></a>
+      <li class="navigation-item">
+          <a class="navigation-link navigation-link-4" href="info.html">
+              <span data-text="Info">Info</span></a>
+      <li class="navigation-item">
+          <a class="navigation-link navigation-link-4" href="action.html">
+              <span data-text="Take Action">Take Action</span></a></li>
+    </div>
+
+    
+    <section class="links-wrapper">
+
+    <div class="navigation-wrapper">
+      <div class="project-preview-wrapper">
+        <div class="project-preview"></div>
+      </div>
+      <ul class="navigation-list">
+        <sup class="numB">01</sup>
+        <li class="navigation-item animation-delay slide-up show-on-scroll">
+          <a class="navigation-link navigation-link-1" href="joyce.html">
+            <span data-text="Joyce Echaquan">Joyce Echaquan</span>
+          </a>
+        </li>
+        <div class="project-overlay"></div>
+        <li class="navigation-item animation-delay slide-up-slower show-on-scroll">
+          <a class="navigation-link navigation-link-2" href="mikmaq.html">
+            <span data-text="Mi'kmaq Lobster Dispute">Mi'kmaq Lobster Dispute</span>
+          </a>
+        </li>
+        <li class="navigation-item animation-delay slide-up-slowest show-on-scroll">
+          <a class="navigation-link navigation-link-3" href="1492.html">
+            <span data-text="1492 Land Back Lane">1492 Land Back Lane</span>
+          </a>
+        </li>
+        <li class="navigation-item animation-delay slide-up-slowest2 show-on-scroll">
+          <a class="navigation-link navigation-link-4" href="#">
+            <span data-text="Transmountain Pipeline">Transmountain Pipeline</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="progressbar"></div>
+
+    </section>
+
+    <section class="bottom">
+
+    </section>
+
+
+
+<script>
+/* Open the sidenav */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "25%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script>
+  (function newFact() {
+var facts = [
+    'For American Indians, injustice has been institutionalized and is administered by federal and state governments <br> <div id="quote-name" class="slide-up-slower show-on-scroll">— Leslie Silko</div>', 
+    'Where do you begin telling someone<br>their world is not the only one? <br> <div id="quote-name" class="slide-up-slower show-on-scroll">— Lee Maracle</div>',
+    'There are no owners in nature <br> <div id="quote-name" class="slide-up-slower show-on-scroll">— Freequill</div>',
+    'The root of oppression is loss of memory <br> <div id="quote-name" class="slide-up-slower show-on-scroll">— Paula Gunn Allen</div>',
+    'How can there be any reconciliation in a country where this kind of inequality is acceptable? <br> <div id="quote-name" class="slide-up-slower show-on-scroll">— Erwin Redsky</div>'
+    
+    ];
+var randomFact = Math.floor(Math.random() * facts.length);
+document.getElementById('quote').innerHTML = facts[randomFact];
+})();
+</script>
+
+<script type="text/javascript">
+function start() {
+    var rotator = document.getElementById('rotator');  
+    var imageDir = 'Assets/';                          
+    var delayInSeconds = 1;                            
+
+    var images = ['joyce-hero.png', 'mikmaq-hero.png', '1492-hero.png', 'pipeline-hero.png'];
+
+    var num = 0;
+    var changeImage = function() {
+        var len = images.length;
+        rotator.src = imageDir + images[num++];
+        if (num == len) {
+            num = 0;
+        }
+    };
+    setInterval(changeImage, delayInSeconds * 2000);
+};
+window.onload=function(){
+start();
+}
+  </script>
+
+    <script src="JS/loading.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="JS/hover.js"></script>
+    <script src="JS/show-on-scroll.js"></script>
+  </body>
+</html>
